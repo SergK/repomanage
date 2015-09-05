@@ -1,4 +1,4 @@
-import arg
+#!/usr/bin/env python
 
 
 def main():
