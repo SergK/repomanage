@@ -1,3 +1,7 @@
+def MyFunction(val):
+    return val + 1
+
+
 def main():
     pass
 
