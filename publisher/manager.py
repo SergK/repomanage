@@ -2,8 +2,6 @@ import logging
 
 from oslo_config import cfg
 
-# from publisher import errors
-
 opts = [
     cfg.StrOpt(
         'tmp_path',

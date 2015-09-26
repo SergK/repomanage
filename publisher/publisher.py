@@ -57,6 +57,7 @@ def main(actions=None):
     CONF(sys.argv[1:], project='publisher',
          version=version.version_info.release_string())
 
+    logging.basicConfig(level=logging.INFO)
     LOG = logging.getLogger(__name__)
 
     try:
@@ -66,9 +67,10 @@ def main(actions=None):
             data = "Hello-data"
         else:
             with open(CONF.input_data_file) as f:
-                # data = json.load(f)
+                text = f.read()
                 data = "Bye-data"
                 print("Bye")
+                print(text)
         LOG.debug('Input data: %s', data)
 
         mgr = manager.Manager(data)

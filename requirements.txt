@@ -1,3 +1,4 @@
 argparse==1.2.1
 pbr>=0.7.0
 oslo.config
+oslo.log
